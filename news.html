@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="NM">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Новости</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+    <script src="news/news-module.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+      hr {
+        height: 1px;
+        background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+        background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+        background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+        background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+        border: 0;
+      }
+    </style>
+	<link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img class="emblem" src="images/grodno_emblem.gif">
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a class="navbar-brand" href="/">
+                <span>СДЮСШОР №4 г.Гродно</span>
+              </a>
+            </li>
+            <li><a href="/">Главная</a></li>
+            <li class="active"><a href="/news.html">Новости</a></li>
+            <li><a href="/galery.html">Галерея</a></li>
+            <li><a href="/admins.html">Администрация</a></li>
+            <li><a href="/about.html">О школе</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <!-- <div ng-controller="MainCtrl" class="container margined-container">
+      <div ng-repeat="post in posts">
+        <div markdown link="{{post.file}}"></div>
+      </div>
+    </div> -->
+
+
+
+
+
+
+    <div class="container margined-container">
+
+
+
+
+    <center>
+      <img src="images/news/judo_afisha.jpg" class="image-standard"/>
+    </center>
+
+    <hr>
+
+
+<h2><p style="text-align: center;">Открытое первенство Гродненской СДЮШОР№4 памяти тренера Санжиева И.Ю.</p></h2>
+<h2><p style="text-align: center;"><span style="line-height:1.6">по греко-римской борьбе среди юношей 2003-2004г.р.</span></p></h2>
+<p style="text-align: center;">27.09.2014</p>
+<p>В соревновании приняли участие команды&nbsp; из &nbsp;Новогрудка, Слонима, Лиды, Березовки, Гродненская профсоюзная школа единоборств, Гродненская СДЮШОР №4 .Всего участников 100 человек.</p>
+<p><strong>Призеры соревнования:</strong></p>
+<p>&nbsp;</p>
+<table class="table">
+  <tbody>
+    <tr>
+      <td>Звежинский Алексей</td>
+      <td>вес кат 26кг</td>
+      <td>Лида</td>
+    </tr>
+    <tr>
+      <td>Гудимов Даниил</td>
+      <td>вес кат 29 кг</td>
+      <td>ФПБ</td>
+    </tr>
+    <tr>
+      <td>Дубровский Владислав</td>
+      <td>вес кат 32 кг</td>
+      <td>ФПБ</td>
+    </tr>
+    <tr>
+      <td>Мурашко Никита</td>
+      <td>вес кат 35 кг</td>
+      <td>ФПБ</td>
+    </tr>
+    <tr>
+      <td>Кривенко Евгений</td>
+      <td>вес кат 38 кг</td>
+      <td>ФПБ</td>
+    </tr>
+    <tr>
+      <td>Богдасарян Алексей</td>
+      <td>вес кат 42 кг</td>
+      <td>Лида</td>
+    </tr>
+    <tr>
+      <td>Суббота Иван</td>
+      <td>вес кат 47 кг</td>
+      <td>Березовка</td>
+    </tr>
+    <tr>
+      <td>Калинин Марек</td>
+      <td>вес кат 53 кг</td>
+      <td>СДЮШОР№4</td>
+    </tr>
+    <tr>
+      <td>Арцукевич Игорь</td>
+      <td>вес кат 59 кг</td>
+      <td>ФПБ</td>
+    </tr>
+    <tr>
+      <td>Проценко Алексей</td>
+      <td>вес кат 70 кг</td>
+      <td>СДЮШОР№4</td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+<p>фотографии соревнований доступны в <a href="/galery.html">галерее</a> </p>
+
+
+
+    <hr>
+
+    <h2>открытое первенство СДЮШОР №4</h2>
+    <p>
+      27 сентября 2014 года Гродненская СДЮШОР №4 проводит открытое первенство СДЮШОР №4 по греко-римской борьбе, памяти тренера Санжиева И.Ю.
+    </p>
+    <p>среди юношей 2003-2005 года рождения в зале борьбы по адресу: ул.Врублевского,1а.</p>
+    <p>Начало соревнований в 11.00 часов.</p>
+    <p>Приглашаем всех желающих</p>
+
+    <hr>
+
+      <h2>Новый набор</h2>
+      <i><center>Учебно-спортивное учреждение</center></i>
+      <i><center>«Гродненская специализированная детско-юношеская школа олимпийского резерва №4»</center></i>
+      <center> <b>Тел. 77-16-75</b> </center>
+      
+      <h4>Проводит набор на 2014-2015 учебный год мальчиков и девочек 8-10 лет в группы:</h4>
+
+      <ul>
+        <li>
+          <p>
+            <b>Греко-римской борьбы</b> в специализированных залах : СШ № 39, 27, 34, училища олимпийского резерва, зала борьбы по ул. Врублевского,1
+          </p>
+          <p>старший тренер отделения -  Охота Николай Юрьевич</p>
+          <p>тел. (29)5890339</p>
+        </li>
+        <li>
+          <p>
+            <b>Вольной борьбы</b> в специализированных залах: СШ №32, 34, по ул.Белуша,37 и ул.Врублевского,1
+          </p>
+          <p>Старший тренер отделения – Пульмановский Николай Альбертович</p>
+          <p>тел.(33)6864099</p>
+        </li>
+        <li>
+          <p>
+            <b>Дзюдо</b> в специализированных залах: по ул.Горького,6, ул.Белуша,37, СШ №27, 32
+          </p>
+          <p>старший тренер отделения -  Короленко Вера Аркадиевна</p>
+          <p>тел.(29)5855711</p>
+        </li>
+        <li>
+          <p>
+            <b>Таэквондо</b> в специализированных залах: по ул.Горького,6, стадиона «Неман», СШ № 34,36,37,38.39
+          </p>
+          <p>старший тренер отделения -  Карапетян Алик Левонович</p>
+          <p>тел.(29)6533379; (29) 7810006</p>
+        </li>
+      </ul>
+
+    </div>
+</body>
+</html>
