@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /news.html
+Host: djushor4.github.io
